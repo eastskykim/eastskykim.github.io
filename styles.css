@@ -142,7 +142,7 @@ a {
 }
 
 .hero-inner {
-  width: min(100%, 760px);
+  width: min(calc(100% - 24px), 1008px);
   text-align: center;
 }
 
@@ -189,7 +189,7 @@ h3 {
 }
 
 .hero-text {
-  max-width: 720px;
+  max-width: 1008px;
   margin-left: auto;
   margin-right: auto;
   color: var(--muted);
@@ -622,6 +622,10 @@ code {
 
   .timeline {
     margin-left: 16px;
+  }
+
+  .hero-inner {
+    width: min(calc(100% - 16px), 1008px);
   }
 
   .project-list {
